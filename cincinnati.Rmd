@@ -1,7 +1,6 @@
 ---
-title: "Data Products Leaflet Map Project"
-author: "Edward Harris"
-date: "Aug 23, 2017"
+title: "Cincinnati, Ohio"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
 output: ioslides_presentation
 ---
 
@@ -10,26 +9,24 @@ knitr::opts_chunk$set(echo = FALSE)
 ```
 
 ## Cincinnati Riverfront
-
-This is an R Markdown presentation. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
-
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document.
-
-## Slide with Bullets
-
-- Bullet 1
-- Bullet 2
-- Bullet 3
-
-## Slide with R Output
-
-```{r cars, echo = TRUE}
-summary(cars)
+```{r}
+library(leaflet)
+cinti <- leaflet() %>%
+      addTiles() %>%
+      setView(lat = 39.10713, lng = -84.50413, zoom = 13) %>%
+      addMarkers(lng = c(-84.6630165, -84.50745, -84.51603, -84.50858, -84.53745,
+                                -84.49712, -84.46381, -84.47632, -84.52058, -84.26808),
+                 lat = c(39.0532746, 39.09761, 39.09541, 39.14454, 39.10963,
+                                39.11366, 39.03122, 39.15017, 39.13031, 39.3432),
+                 popup = c("Cincinnati/Northern Kentucky Airport",
+                                  "Great American Ball Park (The Reds)",
+                                  "Paul Brown Stadium (The Bengals)",
+                                  "Cincinnati Zoo", "Cincinnati Museum Center",
+                                  "Cincinnati Art Museum", "Northern Kentucky University",
+                                  "Xavier University", "University of Cincinnati",
+                                  "Paramount Kings Island"))
+cinti
 ```
 
-## Slide with Plot
 
-```{r pressure}
-plot(pressure)
-```
 
