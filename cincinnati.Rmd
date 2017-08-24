@@ -9,6 +9,7 @@ knitr::opts_chunk$set(echo = FALSE)
 ```
 
 ## Cincinnati Riverfront
+### Date: `r format(Sys.time(), '%d-%B-%Y')`
 ```{r}
 library(leaflet)
 cinti <- leaflet() %>%
@@ -25,8 +26,10 @@ cinti <- leaflet() %>%
                                   "Cincinnati Art Museum", "Northern Kentucky University",
                                   "Xavier University", "University of Cincinnati",
                                   "Paramount Kings Island"))
-cinti
-```
 
+library(htmlwidgets)
+saveWidget(widget = cinti, file ="/Users/harridw/Development/Coursera/Course9/Week 2/DataProductsLeafletMap/cinti.html")
+```
+---
 
 
