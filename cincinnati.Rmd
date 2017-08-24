@@ -9,6 +9,7 @@ knitr::opts_chunk$set(echo = FALSE)
 ```
 
 ## Cincinnati Riverfront
+### Date: `r format(Sys.time(), '%d %B, %Y')`
 ```{r}
 library(leaflet)
 cinti <- leaflet() %>%
