@@ -3,16 +3,16 @@ output: ioslides_presentation
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(include = TRUE, echo = FALSE, results = "markup")
+knitr::opts_chunk$set(include = TRUE, echo = FALSE, results = "markup", cache = FALSE)
 ```
 
 
 `r format(Sys.time(), '%d %B, %Y')`
-```{r cinti_leaflet_map, fig.align ='center'}
+```{r cinti_leaflet_map, fig.align ='center', fig.height = 5, fig.width = 5}
 library(leaflet)
 cinti <- leaflet() %>%
       addTiles() %>%
-      setView(lat = 39.10713, lng = -84.50413, zoom = 13) %>%
+      setView(lat = 39.10713, lng = -84.50413, zoom = 14) %>%
       addMarkers(lng = -84.50745, lat = 39.09761,
                 label = "Great American Ball Park(Reds)",
                 labelOptions = labelOptions(noHide = T, direction = "top",
