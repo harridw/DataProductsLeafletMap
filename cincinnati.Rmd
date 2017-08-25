@@ -5,9 +5,7 @@ output: ioslides_presentation
 ---
 
 
-## Cincinnati Riverfront
-### Date: `r format(Sys.time(), '%d-%B-%Y')`
-```{r cinti_leaf, include = FALSE, echo = FALSE}
+```{r cinti_leaflet_code, include = FALSE, echo = FALSE}
 library(leaflet)
 cinti <- leaflet() %>%
       addTiles() %>%
@@ -23,8 +21,14 @@ cinti <- leaflet() %>%
                                   "Cincinnati Art Museum", "Northern Kentucky University",
                                   "Xavier University", "University of Cincinnati",
                                   "Paramount Kings Island"))
+
 ```
+
+
+```{r cinti_leaflet_map, include = FALSE, echo = FALSE}
+format(Sys.time(), '%d-%B-%Y')
 cinti
+```
 ---
 
 
