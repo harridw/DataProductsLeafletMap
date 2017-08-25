@@ -83,7 +83,7 @@ cinti <- leaflet(width = "100%", height = "100%") %>%
                                                 "color" = "red",
                                                 "font-style" = "italic",
                                                 "font-size" = "11px"))) %>%
-     addMarkers(lng = -84.506488, lat = 39.103197,
+     addMarkers(lng = -84.511342, lat = 39.103623,
                 label = "Aranoff Center for the Arts",
                 labelOptions = labelOptions(noHide = T, direction = "auto",
                                             style = list(
