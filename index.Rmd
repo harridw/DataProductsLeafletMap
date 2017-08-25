@@ -5,7 +5,7 @@ output: ioslides_presentation
 ---
 
 
-```{r cinti_leaflet_code, include = FALSE, echo = FALSE}
+```{r cinti_leaflet_code, include = TRUE, echo = FALSE, results = "asis"}
 library(leaflet)
 cinti <- leaflet() %>%
       addTiles() %>%
@@ -94,13 +94,10 @@ cinti <- leaflet() %>%
                                                 "color" = "red",
                                                 "font-style" = "italic",
                                                 "font-size" = "11px")))
-
-```
-
-
-```{r cinti_leaflet_map, include = FALSE, echo = FALSE, results = "asis"}
 cinti
 ```
----
+
+
+
 
 
