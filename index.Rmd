@@ -15,7 +15,7 @@ cinti <- leaflet(width = "100%", height = "100%") %>%
       setView(lat = 39.10713, lng = -84.50413, zoom = 15) %>%
       addMarkers(lng = -84.50745, lat = 39.09761,
                 label = "Great American Ball Park(Reds)",
-                labelOptions = labelOptions(noHide = T, direction = "top",
+                labelOptions = labelOptions(noHide = T, direction = "auto",
                                             style = list(
                                                 "color" = "red",
                                                 "font-style" = "italic",
@@ -29,42 +29,42 @@ cinti <- leaflet(width = "100%", height = "100%") %>%
                                                 "font-size" = "11px"))) %>%
      addMarkers(lng = -84.50858, lat = 39.14454,
                 label = "Cincinnati Zoo",
-                labelOptions = labelOptions(noHide = T, direction = "top",
+                labelOptions = labelOptions(noHide = T, direction = "auto",
                                             style = list(
                                                 "color" = "red",
                                                 "font-style" = "italic",
                                                 "font-size" = "11px"))) %>%
      addMarkers(lng = -84.512276, lat = 39.101596,
                 label = "Fountain Square",
-                labelOptions = labelOptions(noHide = T, direction = "top",
+                labelOptions = labelOptions(noHide = T, direction = "auto",
                                             style = list(
                                                 "color" = "red",
                                                 "font-style" = "italic",
                                                 "font-size" = "11px"))) %>%
      addMarkers(lng = -84.53745, lat = 39.10963,
                 label = "Cincinnati Museum Center",
-                labelOptions = labelOptions(noHide = T, direction = "top",
+                labelOptions = labelOptions(noHide = T, direction = "auto",
                                             style = list(
                                                 "color" = "red",
                                                 "font-style" = "italic",
                                                 "font-size" = "11px"))) %>%
      addMarkers(lng = -84.49712, lat = 39.11366,
                 label = "Cincinnati Art Museum",
-                labelOptions = labelOptions(noHide = T, direction = "top",
+                labelOptions = labelOptions(noHide = T, direction = "auto",
                                             style = list(
                                                 "color" = "red",
                                                 "font-style" = "italic",
                                                 "font-size" = "11px"))) %>%
      addMarkers(lng = -84.47632, lat = 39.15017,
                 label = "Xavier University(Musketeers)",
-                labelOptions = labelOptions(noHide = T, direction = "top",
+                labelOptions = labelOptions(noHide = T, direction = "auto",
                                             style = list(
                                                 "color" = "red",
                                                 "font-style" = "italic",
                                                 "font-size" = "11px"))) %>%
      addMarkers(lng = -84.52058, lat = 39.13031,
                 label = "University of Cincinnati(Bearcats)",
-                labelOptions = labelOptions(noHide = T, direction = "top",
+                labelOptions = labelOptions(noHide = T, direction = "auto",
                                             style = list(
                                                 "color" = "red",
                                                 "font-style" = "italic",
@@ -78,21 +78,21 @@ cinti <- leaflet(width = "100%", height = "100%") %>%
                                                 "font-size" = "11px"))) %>%
      addMarkers(lng = -84.518832, lat = 39.1153374,
                 label = "Findlay Market",
-                labelOptions = labelOptions(noHide = T, direction = "top",
+                labelOptions = labelOptions(noHide = T, direction = "auto",
                                             style = list(
                                                 "color" = "red",
                                                 "font-style" = "italic",
                                                 "font-size" = "11px"))) %>%
      addMarkers(lng = -84.506488, lat = 39.103197,
                 label = "Aranoff Center for the Arts",
-                labelOptions = labelOptions(noHide = T, direction = "top",
+                labelOptions = labelOptions(noHide = T, direction = "auto",
                                             style = list(
                                                 "color" = "red",
                                                 "font-style" = "italic",
                                                 "font-size" = "11px"))) %>%
      addMarkers(lng = -84.497842, lat = 39.111354,
                 label = "Playhouse in the Park",
-                labelOptions = labelOptions(noHide = T, direction = "top",
+                labelOptions = labelOptions(noHide = T, direction = "auto",
                                             style = list(
                                                 "color" = "red",
                                                 "font-style" = "italic",
