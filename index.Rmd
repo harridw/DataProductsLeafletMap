@@ -8,9 +8,9 @@ knitr::opts_chunk$set(include = TRUE, echo = FALSE, results = "markup", cache = 
 
 
 `r format(Sys.time(), '%d %B, %Y')`
-```{r cinti_leaflet_map, fig.align ='center', fig.height = 5, fig.width = 5}
+```{r cinti_leaflet_map, fig.align ='center', fig.height = 5, fig.width = 8}
 library(leaflet)
-cinti <- leaflet() %>%
+cinti <- leaflet(width = "100%") %>%
       addTiles() %>%
       setView(lat = 39.10713, lng = -84.50413, zoom = 14) %>%
       addMarkers(lng = -84.50745, lat = 39.09761,
@@ -22,7 +22,7 @@ cinti <- leaflet() %>%
                                                 "font-size" = "11px"))) %>%
      addMarkers(lng = -84.51603, lat = 39.09541,
                 label = "Paul Brown Stadium(Bengals)",
-                labelOptions = labelOptions(noHide = T, direction = "bottom",
+                labelOptions = labelOptions(noHide = T, direction = "auto",
                                             style = list(
                                                 "color" = "red",
                                                 "font-style" = "italic",
@@ -71,7 +71,7 @@ cinti <- leaflet() %>%
                                                 "font-size" = "11px"))) %>%
      addMarkers(lng = -84.511239, lat = 39.097624,
                 label = "National Underground Railroad Freedom Center",
-                labelOptions = labelOptions(noHide = T, direction = "left",
+                labelOptions = labelOptions(noHide = T, direction = "auto",
                                             style = list(
                                                 "color" = "red",
                                                 "font-style" = "italic",
