@@ -15,7 +15,7 @@ cinti <- leaflet(width = "100%", height = "100%") %>%
       setView(lat = 39.10713, lng = -84.50413, zoom = 15) %>%
       addMarkers(lng = -84.50745, lat = 39.09761,
                 label = "Great American Ball Park(Reds)",
-                labelOptions = labelOptions(noHide = T, direction = "auto",
+                labelOptions = labelOptions(noHide = T, direction = "top",
                                             style = list(
                                                 "color" = "red",
                                                 "font-style" = "italic",
