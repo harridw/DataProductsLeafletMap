@@ -4,13 +4,10 @@ date: "`r format(Sys.time(), '%d %B, %Y')`"
 output: ioslides_presentation
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
-```
 
 ## Cincinnati Riverfront
 ### Date: `r format(Sys.time(), '%d-%B-%Y')`
-```{r}
+```{r cinti_leaf, include = FALSE, echo = FALSE}
 library(leaflet)
 cinti <- leaflet() %>%
       addTiles() %>%
@@ -26,10 +23,8 @@ cinti <- leaflet() %>%
                                   "Cincinnati Art Museum", "Northern Kentucky University",
                                   "Xavier University", "University of Cincinnati",
                                   "Paramount Kings Island"))
-
-library(htmlwidgets)
-saveWidget(widget = cinti, file ="/Users/harridw/Development/Coursera/Course9/Week 2/DataProductsLeafletMap/cinti.html")
 ```
+cinti
 ---
 
 
