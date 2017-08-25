@@ -1,10 +1,9 @@
 ---
-title: "Cincinnati, Ohio"
-date: "`r format(Sys.time(), '%d %B, %Y')`"
 output: ioslides_presentation
 ---
 
 
+`r format(Sys.time(), '%d %B, %Y')`
 ```{r cinti_leaflet_code, include = TRUE, echo = FALSE, results = "asis"}
 library(leaflet)
 cinti <- leaflet() %>%
