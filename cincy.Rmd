@@ -1,11 +1,13 @@
 ---
-title: "Cincinnati, Ohio"
+title: "Cincinnati"
+author: "Edward Harris"
 date: "`r format(Sys.time(), '%d %B, %Y')`"
-output: ioslides_presentation
+output: html_document
 ---
 
-
-```{r cinti_leaflet_code, include = FALSE, echo = FALSE}
+## Cincinnati Locations
+`r format(Sys.time(), '%d %B, %Y')`
+```{r cinti_leaflet_code, include = FALSE, echo = FALSE, results = "markup"}
 library(leaflet)
 cinti <- leaflet() %>%
       addTiles() %>%
@@ -94,13 +96,5 @@ cinti <- leaflet() %>%
                                                 "color" = "red",
                                                 "font-style" = "italic",
                                                 "font-size" = "11px")))
-
-```
-
-
-```{r cinti_leaflet_map, include = FALSE, echo = FALSE, results = "asis"}
 cinti
 ```
----
-
-
